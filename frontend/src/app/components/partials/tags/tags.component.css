@@ -1,0 +1,10 @@
+.tag-filter{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+margin-block-start: 40px;
+gap:10px
+}
+.tag-filter a{background: rgba(var(--lightcreme),.8); color: rgba(var(--heading),1); font-size: 0.825rem; padding-block:6px 8px; padding-inline: 15px; text-transform: capitalize; border: 1px solid rgba(var(--heading),.2); border-radius: 20px; font-weight: 600;}
+.tag-filter a.active{background: rgba(var(--heading),1); color:rgba(var(--whiteClr),.8)}

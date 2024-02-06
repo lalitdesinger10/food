@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --btnClr:25, 164, 173;
+    --whiteClr:255,255,255;
+    --darkblue:40, 2, 116;
+    --darkgray: 32,32,32;
+    --lightcreme:255, 247, 236;
+    --heading:222, 51, 28;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+html, body, button, input{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+a{text-decoration: none;} 
+/* styles.scss */
+
+.container{
+  margin-inline: auto;
+  width: min(100%, 1280px);
+  padding-inline: 15px;
+  padding-block: 40px
+}
+
+/* Override Colors by using style rules */
+@import '~css-star-rating/css/star-rating.min.css';
+
+.rating.color-negative .star-container .star {
+  svg {
+    fill: #0f0;
+  }
+  i {
+    color: #0f0;
+  }
+}
+
+.rating.color-ok .star-container .star {
+  svg {
+    fill: #f00;
+  }
+  i {
+    color: #f00;
+  }
+}
+
+.rating.color-positive .star-container .star {
+  svg {
+    fill: #00f;
+  }
+  i {
+    color: #00f;
+  }
+}
+
+.rating.color-default .star-container .star {
+  svg {
+    fill: #ff0;
+  }
+  i {
+    color: #ff0;
+  }
+}
+.content{display:flex;flex-direction: column;padding-block: 10px; padding-inline: 15px;}
+  .content .name{color: rgba(var(--heading),1);display: flex;align-items: center;justify-content: space-between;}
+  .favorite{color: rgba(var(--heading),1); position: absolute; inset-inline-end: 10px; background: rgba(var(--whiteClr),.8); width: 34px; height: 34px; font-size: 24px; display: flex; align-items: center; justify-content: center; border-radius: 10px; inset-block-start: 10px;}
+  .favorite.not{color: rgba(var(--darkgray),.5);}
+  .star{justify-content: flex-start;margin-block: 5px 5px;margin-inline-start: 0px;color: rgba(var(--darkgray),.7);}
+  .product-item-footer{display: flex; align-items: center; gap:5px}
+  .cook-time{color: rgba(var(--darkgray),.5);font-size: .825rem;display: flex; align-items: center;justify-content: center;gap: 5px;}
+  .cook-time i.bx{line-height: normal;}
+.origintag, .origins span{background: rgba(var(--lightcreme),.8); color: rgba(var(--heading),1); font-size: 0.725rem; padding-block:2px; padding-inline: 5px; text-transform: capitalize; border: 1px solid rgba(var(--heading),.2); border-radius: 3px;}
+.tags, .tagsdetail a{background: rgba(var(--darkgray),.05); color: rgba(var(--darkgray),.8); font-size: 0.725rem; padding-block:2px; padding-inline: 5px; text-transform: capitalize; border: 1px solid rgba(var(--darkgray),.2); border-radius: 3px; margin-block-start: 5px;}
+  .price{font-size: 1.3rem;color:rgba(var(--darkgray),.8); font-weight: 600; margin-block-start: 10px;}

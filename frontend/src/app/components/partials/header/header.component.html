@@ -1,1 +1,26 @@
-<p>header works!</p>
+<header>
+    <div class="logo">
+        <a routerLink="/">
+            <img src="../../../../assets/logo-happy-food.svg"/>
+        </a>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a routerLink="/login">Login</a></li>
+            <li class="menu">
+                <a routerLink="/dashboard">Dashboard</a>
+                <ul class="submenu">
+                    <li><a routerLink="/profile">Profile</a></li>
+                    <li><a routerLink="/order">Order</a></li>
+                    <li><a routerLink="javascript:void(0)">Logout</a></li>
+                </ul>
+            </li>
+            <li>
+                <a routerLink="/cart">
+                    <i class='bx bx-cart  bx-tada-hover'></i>
+                    <span class="badeg">3</span></a>
+            </li>
+        </ul>
+    </div>
+    
+</header>

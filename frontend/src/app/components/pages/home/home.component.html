@@ -1,0 +1,47 @@
+<div class="container">
+<app-search></app-search>
+<app-tags></app-tags>
+<ul class="foodList">
+    <li *ngFor="let food of foods" class="foodItem">
+        <a routerLink="/food/{{food.id}}">
+            <img [src]="food.imageUrl" [alt]="food.name"/>
+            <span class="favorite {{food.favorite? '': 'not'}}">
+                <i class='bx bxs-heart  bx-tada-hover'></i>
+           </span>
+            <div class="content">
+                <div class="name">
+                    {{food.name}}
+               
+               <div class="cook-time">
+                <i class='bx bx-time  bx-tada-hover'></i>
+                {{food.cookTime}}
+            </div>
+            </div>
+
+                <div class="star">
+                    <star-rating [starType]="'svg'" [rating]="food.stars" NumOfStars="5" [showHalfStars]="true"
+                    ></star-rating> 
+                 {{food.stars}}
+                </div>
+                <div class="product-item-footer">
+                    <span *ngFor="let origin of food.origins" class="origintag">
+                        {{origin}}
+                    </span>
+                 </div>
+                 <div class="product-item-footer">
+                    <span *ngFor="let tag of food.tags" class="tags">
+                        {{tag}}
+                    </span>
+               
+            </div>
+
+                <div class="price">
+                    <span>
+                        {{food.price | currency}}
+                    </span>
+                </div>
+            </div>
+        </a></li>
+        
+</ul>
+</div>

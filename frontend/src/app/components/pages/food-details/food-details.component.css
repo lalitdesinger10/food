@@ -8,5 +8,3 @@
 .origins span, .tagsdetail a{margin-inline-end: 5px;}
 .cook-time{justify-content: flex-start; margin-block-start: 20px;}
 .price{font-size: 2rem; font-weight: 800;}
-.details-content button{background: rgba(var(--heading),1); color:rgba(var(--whiteClr),1);border: 1px solid rgba(var(--heading),1); display: inline-flex; padding-block: 13px; padding-inline: 25px; width: 200px; border-radius: 45px; justify-content: center; font-size: 1rem; font-weight: 600; margin-block-start: 20px; cursor: pointer;transition: .5s;}
-.details-content button:hover{border-color:rgba(var(--heading),1);background: rgba(var(--whiteClr),1);color:rgba(var(--heading),1);}

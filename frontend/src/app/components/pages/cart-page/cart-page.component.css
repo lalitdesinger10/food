@@ -1,0 +1,96 @@
+.contant{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  
+  ul.cartPg{
+    display: flex;
+    flex-direction: column;
+    flex:3 0;
+    justify-content: space-evenly;
+    border: 1px solid rgba(var(--heading), .5);
+    border-radius: 1rem;
+    list-style: none;
+    margin: 0.5rem;
+    padding: 0;
+  }
+  
+  ul.cartPg li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(var(--darkgray),.2);
+    color:  rgba(var(--darkgray),.8);
+  }
+  
+  ul.cartPg li:last-child{
+    border: none;
+  }
+  
+  ul.cartPg li img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: .5rem;
+    object-fit: cover;
+  }
+  
+  ul.cartPg li div,  ul.cartPg li a{
+    padding: 1rem;
+    color:rgba(var(--darkgray),.8)
+  }
+  
+  ul.cartPg li div:not(:first-child){
+    flex-basis: 18%;
+  }
+  
+  ul.cartPg li select{
+    width: 3rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(var(--darkgray),.5);
+    font-size: 1.1rem;
+    font-weight: 100;
+    color:rgba(var(--darkgray),.5);  
+  }
+ .checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex:1 3;
+    border: 1px solid rgba(var(--heading), .5);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  
+  .checkout>div{
+    font-size: 1.4rem;
+    margin: 1rem;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .foods-count{
+    margin-bottom: 1.5rem;
+  }
+  
+  .foods-count::before{
+    content:"Count: ";
+    color: grey;
+  }
+  
+  .total-price::before{
+    content: 'Price: ';
+    color: grey;
+  }
+  
+  .checkout a{
+width: 100%;
+  }
+  

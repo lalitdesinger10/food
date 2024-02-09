@@ -1,0 +1,15 @@
+.notFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-direction: column;
+    padding-block: 5rem;
+}
+.message{
+    font-size: 2rem;
+    color:rgba(var(--darkgary),.9)
+}
+.btn-primary{
+    width: auto;
+}

@@ -10,7 +10,10 @@ export class TagsComponent {
   tags?:Tag[];
   selectedLanguage='/tag/All'
   constructor(foodService:FoodService){
-    this.tags = foodService.getAllTags();
+    // this.tags = foodService.getAllTags();
+    foodService.getAllTags().subscribe(serverTags =>{
+      this.tags = serverTags;
+    })
   }
 
 }

@@ -1,0 +1,28 @@
+.login-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(var(--heading), .5);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    padding-inline: 2.5rem;
+    margin-inline: auto;
+    width: min(100%, 540px);
+}
+.form-gourp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-block-end: 15px;
+}
+.form-gourp label{font-size: .825rem;margin-block-end: 5px;}
+.form-gourp .input-form{
+    border: 1px solid rgba(var(--darkgray), .5);
+    padding-block: 12px;
+    padding-inline: 15px;
+    border-radius: 5px;
+    font-size: .925rem;
+    
+}
+.w-100{width: 100%;}
+.error-list{font-size: .825rem;color:red}

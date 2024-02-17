@@ -13,7 +13,13 @@ import { FoodDetailsComponent } from './components/pages/food-details/food-detai
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 import { TitleComponent } from './components/partials/title/title.component';
 import { NotFoundComponent } from './components/partials/not-found/not-found.component';
-
+import { LoginComponent } from './components/pages/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { DefaultButtonComponent } from './components/partials/default-button/default-button.component';
+import { InputContainerComponent } from './components/partials/input-container/input-container.component';
+import { InputValidationComponent } from './components/partials/input-validation/input-validation.component';
+import { TextInputComponent } from './components/partials/text-input/text-input.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +32,25 @@ import { NotFoundComponent } from './components/partials/not-found/not-found.com
     CartPageComponent,
     TitleComponent,
     NotFoundComponent,
+    LoginComponent,
+    DefaultButtonComponent,
+    InputContainerComponent,
+    InputValidationComponent,
+    TextInputComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StarRatingModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      timeOut:3000,
+      positionClass:'toast-bottom-right',
+      newestOnTop:false
+    })
+
  ],
   providers: [],
   bootstrap: [AppComponent]

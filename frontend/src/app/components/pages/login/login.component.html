@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="login-page">
+        <app-title title="Login page"></app-title>
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
+            <!-- <div class="form-gourp">
+            <label>Email</label>
+            <input class="input-form" type="email" Placeholder="Email" formControlName="email"/>
+            <div class="error-list" *ngIf="fc.email.errors && isSubmitted">
+                <div *ngIf="fc.email.errors.required">Should not be empty</div>
+                <div *ngIf="fc.email.errors.email">Email is not correct</div>
+            </div>
+        </div> -->
+            <div class="form-gourp">
+                <text-input [control]="fc.email" [showErrorsWhen]="isSubmitted" type="email" label="Email">
+                </text-input>
+            </div>
+            <div class="form-gourp">
+                <text-input [control]="fc.password" [showErrorsWhen]="isSubmitted" type="password" label="Password">
+                </text-input>
+            </div>
+            <default-button text="Login"></default-button>
+
+            <!-- <div class="form-gourp">
+            <label>Password</label>
+            <input class="input-form" type="password" Placeholder="Password" formControlName="password"/>
+            <div class="error-list" *ngIf="fc.email.errors && isSubmitted">
+                <div *ngIf="fc.email.errors.required">Should not be empty</div>
+           </div>
+        </div>
+        <div class="form-gourp">
+            <button type="submit" class="btn-primary w-100">Login</button>
+        </div> -->
+
+
+        </form>
+
+    </div>
+</div>
